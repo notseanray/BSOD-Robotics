@@ -70,7 +70,6 @@ h1 {
 .navbar {
   z-index: 1;
   overflow: hidden;
-  background-color: #2f3031;
   position: fixed;
   top: 0;
   left: 0;
@@ -86,7 +85,6 @@ h1 {
   font-size: 16px;
 }
 .navbar a:hover {
-  background: #ffffff9c;
   color: #145cbf;
 }
 .navbar a.active {
