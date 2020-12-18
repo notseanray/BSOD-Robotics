@@ -11,11 +11,20 @@ h1 {
 } 
 .box {
   background-color: #3D4751;
-  width: 80%;
+  width: 48%;
   margin: auto;
   border-radius: 10px;
   padding: 5px;
-
+  float: left;
+  padding-bottom: 1px;
+}
+.box2 {
+  background-color: #3D4751;
+  width: 48%;
+  margin: auto;
+  border-radius: 10px;
+  padding: 5px;
+  float: right;
   padding-bottom: 1px;
 }
 /*drop down from w3 start*/
