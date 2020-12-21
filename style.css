@@ -9,9 +9,12 @@ h1 {
   font-size: 14px;
   font-family: 'Segoe UI', sans-serif;
 } 
+.main {
+  width: 800px;
+}
 .box {
   background-color: #3D4751;
-  width: 49%;
+  width: 380px;
   margin: auto;
   border-radius: 10px;
   padding: 5px;
@@ -20,7 +23,7 @@ h1 {
 }
 .box2 {
   background-color: #3D4751;
-  width: 49%;
+  width: 380px;
   margin: auto;
   border-radius: 10px;
   padding: 5px;
