@@ -1,34 +1,31 @@
 @import "compass/css3";
-
-* {
+.body {
   font-family: 'Segoe UI', sans-serif;
-  font-size: 17px;
+  background-image: linear-gradient(to bottom right, #38a5fd, #010192);
+    background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-size: cover;
 }
-h1 {
-  color: white;
-  font-size: 14px;
-  font-family: 'Segoe UI', sans-serif;
+.p {
+  font-size: 10px;
+}
+.h1 {
+  font-size: 18px;
 } 
 .main {
-  width: 800px;
+  width: 75%;
 }
 .box {
   background-color: #3D4751;
-  width: 390px;
-  margin: auto;
-  border-radius: 10px;
-  padding: 5px;
+  width: 48%;
+  padding: 2px;
   float: left;
-  padding-bottom: 1px;
 }
 .box2 {
   background-color: #3D4751;
-  width: 390px;
-  margin: auto;
-  border-radius: 10px;
-  padding: 5px;
+  width: 48%;
+  padding: 2px;
   float: right;
-  padding-bottom: 1px;
 }
 /*drop down from w3 start*/
 .dropbtn {
@@ -66,9 +63,13 @@ h1 {
   display: block;
 }
 
-.dropdown a:hover {background-color: #ddd;}
+.dropdown a:hover {
+  background-color: #ddd;
+}
 
-.show {display: block;}
+.show {
+  display: block;
+}
 /*drop down from w3 stop*/
 .navbar {
   z-index: 1;
@@ -79,7 +80,7 @@ h1 {
   width: 100%;
 }
 .navbar a {
-  float: left;
+  float: right;
   display: block;
   color: #f2f2f2;
   text-align: center;
@@ -102,7 +103,6 @@ h1 {
   color: #f2f2f2;
   text-align: center;
   text-decoration: none;
-  font-size: 17px;
 }
 .navbar-bar-item
 {
@@ -148,6 +148,10 @@ h1 {
 {
    width: 100%;
    height: 100%;
+}
+.navbar-button {
+  width: 110px;
+  padding: 8px 8px;
 }
 div {
   color: white;
