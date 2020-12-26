@@ -1,10 +1,9 @@
-@import "compass/css3";
-.body {
+* {
   font-family: 'Segoe UI', sans-serif;
   background-image: linear-gradient(to bottom right, #38a5fd, #010192);
     background-repeat: no-repeat;
 		background-attachment: fixed;
-		background-size: cover;
+    background-size: cover;
 }
 .p {
   font-size: 10px;
