@@ -24,64 +24,21 @@ body {
   padding: 2px;
   float: right;
 }
-/*drop down from w3 start*/
-.dropbtn {
-  background-color: #3498DB;
-  color: white;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
-}
-
-.dropbtn:hover, .dropbtn:focus {
-  background-color: #2980B9;
-}
-
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  overflow: auto;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-.dropdown a:hover {
-  background-color: #ddd;
-}
-
-.show {
-  display: block;
-}
-/*drop down from w3 stop*/
 .navbar {
-  z-index: 1;
+  z-index: 2;
   overflow: hidden;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
+  background-color: rgba(0,255,255,0.2);
+  display: inline-block;
 }
 .navbar a {
   float: right;
   display: block;
   color: #f2f2f2;
   text-align: center;
-/*  padding: 22px 14px; */
   text-decoration: none;
   font-size: 16px;
   z-index: 1;
@@ -103,43 +60,7 @@ body {
 }
 .navbar-bar-item
 {
-   color: #0078d7;
-   cursor: pointer;
-   position: relative;
-   border-top-right-radius: 10px;
-   border-bottom-left-radius: 10px;
-   transition: all 1s;
-   text-align: center;
    background-color: transparent;
-}
-.navbar-bar-item:after, .navbar-bar-item:before
-{
-   content: " ";
-   width: 10px;
-   height: 10px;
-   position: absolute;
-   border: 0px solid #fff;
-   transition: all 1s;
-   background-color: transparent;
-}
- .navbar-bar-item:after
-{
-   top: -1px;
-   left: -1px;
-   border-top: 5px solid #b64240;
-   border-left: 5px solid #b64240;
-}
- .navbar-bar-item:before
-{
-   bottom: -1px;
-   right: -1px;
-   border-bottom: 5px solid #b64240;
-   border-right: 5px solid #b64240;
-}
- .navbar-bar-item:hover
-{
-   border-top-right-radius: 0px;
-   border-bottom-left-radius: 0px;
 }
  .navbar-bar-item:hover:before, .navbar-bar-item:hover:after
 {
@@ -147,7 +68,7 @@ body {
    height: 100%;
 }
 .navbar-button {
-  width: 110px;
+  width: 150px;
   padding: 8px 8px;
 }
 div {
@@ -182,33 +103,6 @@ a:active {
   z-index: -1;
   border-radius: 5px;
 }
-#loader {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  z-index: 1;
-  width: 120px;
-  height: 120px;
-  margin: -76px 0 0 -76px;
-  border-radius: 50%;
-  border-top: 2px solid white;
-  border-right: 10px solid grey;
-  border-bottom: 2px solid white;
-  border-left: 10px solid grey;
-  -webkit-animation: spin 2s linear infinite;
-  animation: spin 2s linear infinite;
-}
-
-@-webkit-keyframes spin {
-  0% { -webkit-transform: rotate(0deg); }
-  100% { -webkit-transform: rotate(360deg); }
-}
-
-@keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-}
-
 /* Add animation to "page content" */
 .animate-bottom {
   position: relative;
@@ -227,8 +121,37 @@ a:active {
   from{ bottom:-100px; opacity:0 } 
   to{ bottom:0; opacity:1 }
 }
-
-#myDiv {
-  display: none;
-  text-align: center;
+.title {
+  left: 10px;
+  font-size: 38px;
+  display: inline-block;
+}
+.line{
+  width: 100%;
+  opacity: 0.3;
+  border-bottom: 1px solid white;
+  position: relative;
+}
+.line2{
+  width: 130px;
+  border-bottom: 4px solid white;
+  position: relative;
+}
+.line3{
+  width: 100%;
+  opacity: 0.3;
+  border-bottom: 1px solid white;
+  position: absolute;
+}
+.icons {
+  width: 300px;
+  display: inline-block;
+  opacity: .8;
+}
+.sponsers {
+  width: 120px;
+  display: inline-block;
+}
+.values {
+  width: 1000px;
 }

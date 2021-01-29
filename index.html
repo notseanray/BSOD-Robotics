@@ -3,51 +3,70 @@
 	<head>
 		<link rel="stylesheet" type="text/css" href="pages/style.css">
 		<link rel="icon" type="image/png" href="images/favicon.png"/>
-		<title>NCHS Robotics</title>
+		<title>BSOD Robotics</title>
 	</head>
+	
 	<div class="navbar">
-		<div style="float: left;" class='round'>
-			<img src="images/nchslogo.png" height="45" width="45">
+		<div style="float: right;">
+			<a href="pages/resources.html" target="_self"><button class="navbar-bar-item button" onclick="openPage('./Resources.html')"><div class="navbar-button">Resources</div></button></a>
+			<a href="pages/sponsers.html" target="_self"><button class="navbar-bar-item button" onclick="openPage('./Sponsers.html')"><div class="navbar-button">Sponsers</div></button></a>
+			<a href="pages/members.html" target="_self"><button class="navbar-bar-item button" onclick="openPage('./members.html')"><div class="navbar-button">Members</div></button></a>
+			<a href="index.html" target="_self"><button class="navbar-bar-item button" onclick="openPage('./index.html')"><div class="navbar-button">Home</div></button></a>
 		</div>
-		<a href="pages/merch.html" target="_self"><button class="navbar-bar-item button" onclick="openPage('./merch.html')"><div class="navbar-button">Merchandise</div></button></a>
-		<a href="pages/bio.html" target="_self"><button class="navbar-bar-item button" onclick="openPage('./bio.html')"><div class="navbar-button">Team Bio</div></button></a>
-		<a href="index.html" target="_self"><button class="navbar-bar-item button" onclick="openPage('./index.html')"><div class="navbar-button">Home/Blog</div></button></a>
+		<div class="title"><b>BSOD ROBOTICS</b></div>
 	</div>
 	<center>
 		<body onload="myFunction()">
-			<div id="loader"></div>
 			<div style="display:none;" id="myDiv" class="animate-bottom">
-			<div style="display:block; margin-top: 3em;">
-				<h1>NCHS Robotics</h1>
+				<div style="display:block; margin-top: 2.4em;">
+				<div class="line"></div> 
 				<center>
 					<div class="main">
-						
+						<div style="display:block; margin-top: 2.5em;">
 						<div class="box">
-							<h1>Home</h1>
+							<div style="font-size: 35px;">We are</div>
+							<h1 style="font-size: 40px;">BSOD</h1>
+							<div class="line2"></div> 
 							<p>NCHS robotics is a startup robotics team that was founded in late 2020. We are focusing on establishing our team in the ftc league. This text is also just a placeholder, I promise it is just a placeholder and not the actual team bio because that would just be silly to have this text here in place of an actual about page.</p>
 						</div>
 						<div class="box2">
-							<h1>Blog/Updates</h1>
-							<div class="announcements">placeholder 1</div>
-							<div style="display:block; margin-top: 1.0em;"></div>
-							<div class="announcements">placeholder 2</div>
-							<div style="display:block; margin-top: 1.0em;"></div>
-							<div class="announcements">placeholder 3</div>
-							<div style="display:block; margin-top: 1.0em;"></div>
-							<div class="announcements">placeholder 4</div>
+							<div class="sketchfab-embed-wrapper">
+								<iframe title="A 3D model" width="440" height="300" src="https://sketchfab.com/models/982e6ceaf4b8401bbfb0473e18b47ac1/embed?autostart=0&amp;ui_controls=1&amp;ui_infos=1&amp;ui_inspector=1&amp;ui_stop=1&amp;ui_watermark=1&amp;ui_watermark_link=1" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+								<p style="font-size: 13px; font-weight: normal; margin: 5px; color: #b4b4b4;">
+								BSOD Robot Model, viewable on <a href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a>
+								
+								</p>
+							</div>
 						</div>
 					</div>
 				</center>
+				<div style="display:block; margin-top: 22.0em;"></div>
+				<div class="line3"></div>
+				<div style="display:block; margin-top: 23em;"></div>
+				<h1>Core Team Values</h1>
+				<div class="values">
+				<div class="icons"><img src="./images/thumbsup.png" alt="logo" width="200" height="170"><br>COLLABORATION</div>
+				<div class="icons"><img src="./images/puzzle.png" alt="logo" width="200" height="165"><br>CREATIVITY</div>
+				<div class="icons"><img src="./images/circle.png" alt="logo" width="140" height="140"><br>CIRCLE</div>
+				<div style="display:block; margin-top: 3em;"></div>
+				<div class="icons"><img src="./images/square.png" alt="logo" width="160" height="160"><br>SQUARE</div>
+				<div class="icons"><img src="./images/triangle.png" alt="logo" width="140" height="140"><br>TRIANGLE</div>
+				</div>
+				<div style="display:block; margin-top: 2em;"></div>
+				<div class="line3"></div>
+				<div style="display:block; margin-top: 2em;"></div>
+				<div class="sponsers"><img src="./images/sponser1.png" alt="logo" width="100" height="100"></div>
+				<div class="sponsers"><img src="./images/sponser2.png" alt="logo" width="120" height="80"></div>
+				<div class="sponsers"><img src="./images/sponser3.png" alt="logo" width="100" height="100"></div>
+				<p style="font-size: 10px; opacity: .6;">© COPY RIGHT BSOD 2021</p>
 			</div>
 			</div>
 			<script>
 				var myVar;
-				
 				function myFunction() {
-					myVar = setTimeout(showPage, 500);
+					myVar = setTimeout(showPage, 350);
 				}
 				function showPage() {
-					document.getElementById("loader").style.display = "none";
 					document.getElementById("myDiv").style.display = "block";
 				}
 			</script>
