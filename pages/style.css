@@ -1,15 +1,17 @@
 body {
   font-family: 'Segoe UI', sans-serif;
-  background-image: linear-gradient(to bottom right, #38a5fd, #010192);
+  /*background-image: linear-gradient(to bottom right, #38a5fd, #010192);
     background-repeat: no-repeat;
 		background-attachment: fixed;
-    background-size: cover;
+    background-size: cover;*/
+  background-color: #F8F8F8;
 }
 .p {
   font-size: 10px;
 }
 .h1 {
   font-size: 18px;
+  color: black;
 } 
 .main {
   width: 75%;
@@ -31,7 +33,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: rgba(0,255,255,0.2);
+  background-color: #20639B;
   display: inline-block;
 }
 .navbar a {
@@ -72,7 +74,7 @@ body {
   padding: 8px 8px;
 }
 div {
-  color: white;
+  color: black;
   font-size: 18px;
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -82,17 +84,17 @@ a:link {
   text-decoration: none;
 }
 a:visited {
-  color: grey ;
+  color: black;
   background-color: transparent;
   text-decoration: none;
 }
 a:hover {
-  color: white;
+  color: black;
   background-color: transparent;
   text-decoration: underline;
 }
 a:active {
-  color: white;
+  color: black;
   background-color: transparent;
   text-decoration: underline;
 }
@@ -129,18 +131,18 @@ a:active {
 .line{
   width: 100%;
   opacity: 0.3;
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid black;
   position: relative;
 }
 .line2{
   width: 130px;
-  border-bottom: 4px solid white;
+  border-bottom: 4px solid black;
   position: relative;
 }
 .line3{
   width: 100%;
   opacity: 0.3;
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid black;
   position: absolute;
 }
 .icons {
@@ -154,4 +156,8 @@ a:active {
 }
 .values {
   width: 1000px;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 0px;
 }
