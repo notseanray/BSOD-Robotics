@@ -2,29 +2,38 @@
 <html>
 	<head>
 		<link rel="stylesheet" type="text/css" href="./style.css">
-		<link rel="icon" type="image/png" href="images/favicon.png"/>
+		<link rel="icon" type="image/png" href="./images/favicon.png"/>
 		<title>BSOD Robotics</title>
 	</head>
 	
 	<div class="navbar">
-		<div style="float: right;">
-			<a href="./resources.html" target="_self"><button class="navbar-bar-item button" onclick="openPage('./Resources.html')"><div class="navbar-button">Resources</div></button></a>
-			<a href="./sponsors.html" target="_self"><button class="navbar-bar-item button" onclick="openPage('./Sponsers.html')"><div class="navbar-button">Sponsors</div></button></a>
-			<a href="./members.html" target="_self"><button class="navbar-bar-item button" onclick="openPage('./members.html')"><div class="navbar-button">Members</div></button></a>
-			<a href="../index.html" target="_self"><button class="navbar-bar-item button" onclick="openPage('./index.html')"><div class="navbar-button">Home</div></button></a>
-		</div>
-		<div class="title"><b>BSOD ROBOTICS</b></div>
+		<ul>
+				<img src="../images/BSOD_logo.png" alt="logo" width="70px" height="70px" style="border-radius: 60em;">
+				<li><a href="../index.html" target="_self"><div>Home</div></a></li>
+				<li><a href="./about.html" target="_self"><div>About Us</div></a></li>
+				<li><a href="./sponsors.html" target="_self"><div>Sponsors</div></a></li>
+				<li><a href="./support.html" target="_self"><div>Support Us!</div></a></li>
+				<div class="menu">
+					<span class="menu-global menu-top"></span>
+					<span class="menu-global menu-middle"></span>
+					<span class="menu-global menu-bottom"></span>
+				</div>
+				
+		</ul>	
 	</div>
 	<center>
+	<div style="display:none;" id="myDiv" class="animate-bottom">
 		<body onload="myFunction()">
 			<div style="display:none;" id="myDiv" class="animate-bottom">
-				<div style="display:block; margin-top: 2.4em;">
+				<div class="main row" style="margin-top: 5em;">
 				<div class="line"></div> 
-				<center>
-				sponsers!
-				</center>
+					<center>
+						<br><br><br><br><br>
+						<p>Sponsors</p>
+					</center>
+				</div>
 			</div>
-			</div>
+
 			<script>
 				var myVar;
 				function myFunction() {
@@ -34,6 +43,42 @@
 					document.getElementById("myDiv").style.display = "block";
 				}
 			</script>
+			<script>
+					var Menu = {
+					
+					el: {
+						ham: $('.menu'),
+						menuTop: $('.menu-top'),
+						menuMiddle: $('.menu-middle'),
+						menuBottom: $('.menu-bottom')
+					},
+					
+					init: function() {
+						Menu.bindUIactions();
+					},
+					
+					bindUIactions: function() {
+						Menu.el.ham
+							.on(
+							'click',
+							function(event) {
+							Menu.activateMenu(event);
+							event.preventDefault();
+						}
+						);
+					},
+					
+					activateMenu: function() {
+						Menu.el.menuTop.toggleClass('menu-top-click');
+						Menu.el.menuMiddle.toggleClass('menu-middle-click');
+						Menu.el.menuBottom.toggleClass('menu-bottom-click'); 
+					}
+					};
+
+					Menu.init();
+			</script>
+			<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script><script  src="./script.js"></script>
 		</body>
 	</center>
+	</div>
 </html>

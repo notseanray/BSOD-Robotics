@@ -8,7 +8,7 @@ body {
   padding: 3em 0.5em;
 }
 .p {
-  font-size: 10px;
+  font-size: 8px;
 }
 .h1 {
   font-size: 18px;
@@ -94,7 +94,7 @@ div {
 }
 .icons {
   width: 32%;
-  display: block;
+  display: inline-block;
   opacity: .8;
   padding: 1em 1em;
 }
@@ -209,4 +209,7 @@ ul li a:hover::after {
 }
 .container {
 position: relative;
+}
+.values {
+  display: inline-block;
 }
