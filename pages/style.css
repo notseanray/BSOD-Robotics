@@ -336,3 +336,12 @@ ul li a:hover::after {
   .about_leadership {
     text-align: left;
   }
+
+/* Support Us Page Items */
+  /* Sponsorship Tiers */
+  .sponsorship-columns {
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 1em;
+    row-gap: 2em;
+  }
