@@ -145,6 +145,28 @@ div {
     border-bottom: 1px solid #757575;
     width: 95%;
   }
+  .graysection {
+    background-color: #474949;
+    margin: 4em 0em 6em 0em;
+  }
+  .grayline-top {
+    position: absolute;
+    top: -35px;
+    width: 150%;
+    height: 5em;
+    background-color: #474949;
+    transform: rotate(-2deg);
+    border-top: 1px solid #757575;
+  }
+  .grayline-bottom {
+    position: absolute;
+    bottom: -35px;
+    width: 150%;
+    height: 5em;
+    background-color: #474949;
+    transform: rotate(-2deg);
+    border-bottom: 1px solid #757575;
+  }
 
 /* Add animation to "page content" */
 .animate-bottom {
@@ -302,29 +324,6 @@ ul li a:hover::after {
   /* Five Pillars */
   .fivepillars {
     width: 90%;
-  }
-  /* Gray Section Grid */
-  .graysection {
-    background-color: #474949;
-    margin: 4em 0em 6em 0em;
-  }
-  .grayline-top {
-    position: absolute;
-    top: -35px;
-    width: 150%;
-    height: 5em;
-    background-color: #474949;
-    transform: rotate(-2deg);
-    border-top: 1px solid #757575;
-  }
-  .grayline-bottom {
-    position: absolute;
-    bottom: -35px;
-    width: 150%;
-    height: 5em;
-    background-color: #474949;
-    transform: rotate(-2deg);
-    border-bottom: 1px solid #757575;
   }
 
 /* About Page Items */
