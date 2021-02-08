@@ -3,13 +3,16 @@
 	<head>
 		<link rel="stylesheet" type="text/css" href="pages/style.css">
 		<link rel="icon" type="image/png" href="images/favicon.png"/>
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
 		<title>BSOD Robotics</title>
 	</head>
 	
 	<div class="navbar">
 		<ul>
-				<img src="./images/BSOD_logo.png" alt="logo" width="70px" height="70px" style="border-radius: 60em;">
-				<li><a href="index.html" target="_self"><div>Home</div></a></li>
+				<a href="index.html" target="_self"><img src="./images/BSOD Logo 4.png" alt="logo" width="96em" height="96em" style="position: absolute; top: -4px; left: 1em;"></a>
+				<div style="position: relative; width: 4em"></div>
+				<li style="left: 4em;"><a href="index.html" target="_self"><div>Home</div></a></li>
 				<li><a href="pages/about.html" target="_self"><div>About Us</div></a></li>
 				<li><a href="pages/sponsors.html" target="_self"><div>Sponsors</div></a></li>
 				<li><a href="pages/support.html" target="_self"><div>Support Us!</div></a></li>
@@ -22,33 +25,52 @@
 		</ul>	
 	</div>
 	<center>
-	<div style="display:none;" id="myDiv" class="animate-bottom">
+	<div style="display:none;" id="myDiv" class="animate-bottom pagewrap">
 		<body onload="myFunction()">
-					<div class="main row" style="margin-top: 5em;">
-						<div class="column fl-left">
-							<h2 style="text-align: left; color: #3498DB">Blue Screen Of Death</h2>
-							<p style="text-align: left; color: #82C3EA">Welcome to the BSOD Website, home to an amalgamation of multiple schools and groups that came together during the COVID-19 pandemic to organize a robotics club. Originating from North Cobb High School, the BSOD became a legitimate club through hard work and leadership, all stemming from one spontaneous idea.</p>
-							<p style="text-align: left; color: #82C3EA">Take a look around, if you'd like. We hope you enjoy what you see!<br>[Cody, BSOD Co-Lead]</p>
+					<div class="section welcome">
+						<div class="section welcome-columns">
+						<div class="column">
+							<div class="bsodcyan textmedium bold underline">Blue Screen Of Death</div>
+							<div class="bsodblue">Welcome to the BSOD Website, home to an amalgamation of multiple schools and groups that came together during the COVID-19 pandemic to organize a robotics club. Originating from North Cobb High School, the BSOD became a legitimate club through hard work and leadership, all stemming from one spontaneous idea.</div>
+							<div class="bsodblue">Take a look around, if you'd like. We hope you enjoy what you see!<div class="bsodcyan bold">Cody, BSOD Vice President</div></div>
 						</div>
-						<div class="column fl-right">
-						<div class="center">
+						<div class="column">
 							<iframe title="A 3D model" width="320em" height="320em" src="https://sketchfab.com/models/982e6ceaf4b8401bbfb0473e18b47ac1/embed?autostart=0&amp;ui_controls=1&amp;ui_infos=1&amp;ui_inspector=1&amp;ui_stop=1&amp;ui_watermark=1&amp;ui_watermark_link=1" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 							<p style="font-size: 0.8rem; font-weight: normal; margin: 5px; color: #b4b4b4;">BSOD Robot Model, viewable on <a href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a>.</p>
 						</div>
 						</div>
 					</div>
-
-				<div class="main">
-					<h2 style="color: #3498DB">The Five Pillars of BSOD</h2>
+					<div class="thingrayline"></div>
+				<div class="section fivepillars">
+					<div class="bsodcyan textmedium bold underline">The Five Pillars of BSOD</div>
 					<div class="values">
-						<div class="icons" style="color: #82C3EA"><img src="./images/collaboration.jfif" alt="logo" width="150em" height="150em" style="border-radius: 60em;"><br>COLLABORATION<br>Collaboration is a huge part of what we do. Your co-workers are your are greatest tool, and if you use that tool in the right way, there's nowhere you can't go. Work clearly, concisely, precisely, and a well-oiled machine doesn't stand a chance.</div>
-						<div class="icons" style="color: #82C3EA"><img src="./images/leadership.jfif" alt="logo" width="150em" height="150em" style="border-radius: 60em;"><br>LEADERSHIP<br>Leadership is vital to BSOD. Without a captain to lead, there is no sailing -- and you are the author to your life's story. If leadership is needed, step up and be the leader that those around you may need.</div>
-						<div class="icons" style="color: #82C3EA"><img src="./images/efficiency.jfif" alt="logo" width="150em" height="150em" style="border-radius: 60em;"><br>EFFICIENCY<br>Efficiency is very important to how we function. Speed -- cautious and careful speed -- keeps us moving forward. To begin a journey, don't look backwards, look forwards and take one step after another.</div>
-						<div class="icons" style="color: #82C3EA"><img src="./images/reliability.jfif" alt="logo" width="150em" height="150em" style="border-radius: 60em;"><br>RELIABILITY<br>Reliability is one of the most important, if not the most important pillar. Simple failures during a competition could be catastrophic, and mistakes happen, but double check, triple check if that's what it takes.</div>
-						<div class="icons" style="color: #82C3EA"><img src="./images/compassion.jfif" alt="logo" width="150em" height="150em" style="border-radius: 60em;"><br>COMPASSION<br>We are all human. Your fellow co-workers, your judges, your audience, your competition. Treat them as such, and with respect, for one human has the ability to change the entire world.</div>
+						<div class="icons bsodblue"><img src="./images/collaboration.jfif" alt="logo" width="150em" height="150em" style="border-radius: 60em;"><div class="bsodcyan bold textsmall">COLLABORATION</div>Collaboration is a huge part of what we do. Your co-workers are your are greatest tool, and if you use that tool in the right way, there's nowhere you can't go. Work clearly, concisely, precisely, and a well-oiled machine doesn't stand a chance.</div>
+						<div class="icons bsodblue"><img src="./images/leadership.jfif" alt="logo" width="150em" height="150em" style="border-radius: 60em;"><div class="bsodcyan bold textsmall">LEADERSHIP</div>Leadership is vital to BSOD. Without a captain to lead, there is no sailing -- and you are the author to your life's story. If leadership is needed, step up and be the leader that those around you may need.</div>
+						<div class="icons bsodblue"><img src="./images/efficiency.jfif" alt="logo" width="150em" height="150em" style="border-radius: 60em;"><div class="bsodcyan bold textsmall">EFFICIENCY</div>Efficiency is very important to how we function. Speed -- cautious and careful speed -- keeps us moving forward. To begin a journey, don't look backwards, look forwards and take one step after another.</div>
+						<div class="icons bsodblue"><img src="./images/reliability.jfif" alt="logo" width="150em" height="150em" style="border-radius: 60em;"><div class="bsodcyan bold textsmall">RELIABILITY</div>Reliability is one of the most important, if not the most important pillar. Simple failures during a competition could be catastrophic, and mistakes happen, but double check, triple check if that's what it takes.</div>
+						<div class="icons bsodblue"><img src="./images/compassion.jfif" alt="logo" width="150em" height="150em" style="border-radius: 60em;"><div class="bsodcyan bold textsmall">COMPASSION</div>We are all human. Your fellow co-workers, your judges, your audience, your competition. Treat them as such, and with respect, for one human has the ability to change the entire world.</div>
 					</div>
 				</div>
-				
+
+				<div class="section graysection">
+					<div class="section-grid1x3">
+						<div class="column">
+							<div class="bsodcyan bold textmedium">Est.</div>
+							<div class="bsodblue light textsmall">Nov. 2020</div>
+						</div>
+						<div class="column">
+							<div class="bsodcyan bold textmedium">8+</div>
+							<div class="bsodblue light textsmall">Active Members</div>
+						</div>
+						<div class="column">
+							<div class="bsodcyan bold textmedium">0</div>
+							<div class="bsodblue light textsmall">Active Sponsorships</div>
+						</div>
+					</div>
+					<div class="grayline-top"></div>
+					<div class="grayline-bottom"></div>
+				</div>
+
 				<div class="footer">
 				<div style="display:block; margin-top: 2em;"></div>
 				<div style="display:block; margin-top: 2em;"></div>
