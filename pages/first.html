@@ -10,13 +10,13 @@
 	
 	<div class="navbar">
 		<ul>
-				<a href="index.html" target="_self"><img src="../images/BSOD Logo 4.png" alt="logo" width="96em" height="96em" style="position: absolute; top: -4px; left: 1em;"></a>
+				<a href="../index.html" target="_self"><img src="../images/BSOD Logo 4.png" alt="logo" width="96em" height="96em" style="position: absolute; top: -4px; left: 1em;"></a>
 				<div style="position: relative; width: 4em"></div>
 				<li style="left: 4em;"><a href="../index.html" target="_self"><div>Home</div></a></li>
-				<li><a href="../pages/about.html" target="_self"><div>About Us</div></a></li>
+				<li><a href="./about.html" target="_self"><div>About Us</div></a></li>
 				<li><a href="./first.html" target="_self"><div>FIRST</div></a></li>
-				<li><a href="../pages/sponsors.html" target="_self"><div>Sponsors</div></a></li>
-				<li><a href="../pages/support.html" target="_self"><div>Support Us!</div></a></li>
+				<li><a href="./sponsors.html" target="_self"><div>Sponsors</div></a></li>
+				<li><a href="./support.html" target="_self"><div>Support Us!</div></a></li>
 				<div class="menu">
 					<span class="menu-global menu-top"></span>
 					<span class="menu-global menu-middle"></span>
@@ -26,23 +26,22 @@
 		</ul>	
 	</div>
 	<center>
-	<div style="display:none;" id="myDiv" class="animate-bottom pagewrap">
 		<body onload="myFunction()">
-					
+			<div style="display:none;" id="myDiv" class="animate-bottom">
+				
+				
 
-
-				<p style="font-size: 10px; opacity: .6;">©COPYRIGHT BSOD 2021</p>
-				</div>
-			<script>
-				var myVar;
-				function myFunction() {
-					myVar = setTimeout(showPage, 50);
-				}
-				function showPage() {
-					document.getElementById("myDiv").style.display = "block";
-				}
-			</script>
-			<script>
+			</div>
+				<script>
+					var myVar;
+					function myFunction() {
+						myVar = setTimeout(showPage, 650);
+					}
+					function showPage() {
+						document.getElementById("myDiv").style.display = "block";
+					}
+				</script>
+				<script>
 					var Menu = {
 					
 					el: {
@@ -79,5 +78,4 @@
 			<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script><script  src="./script.js"></script>
 		</body>
 	</center>
-	</div>
 </html>
