@@ -83,33 +83,68 @@ div {
 }
 
 /* Formatting */
-.section {
-  padding: 2em 0em 2em 0em;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.section-grid1x3 {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: auto;
-  max-width: 100%;
-  padding-top: 1em;
-  padding-bottom: 1em;
-  width: 150%;
-  z-index: 5;
-}
-.column {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.thingrayline {
-  border-bottom: 1px solid #757575;
-  width: 95%;
-}
+  /* Overall */
+  .section {
+    padding: 2em 0em 2em 0em;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Tables and Columns */  
+  .section-grid1x3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    max-width: 100%;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    width: 150%;
+    z-index: 5;
+  }
+  .column {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Colored Sections */
+  .bsodcyansection {
+    border-left: 5px solid #3498DB;
+    background-color: rgba(52, 152, 219, 0.5);
+    padding: 2em 1em 2em 1em;
+    margin: 2em 0em;
+    width: 90%;
+  }
+  .bsodbluesection {
+    border-left: 5px solid #82C3EA;
+    background-color: rgba(130, 195, 234, 0.5);
+    padding: 2em 1em 2em 1em;
+    margin: 2em 0em;
+    width: 90%;
+  }
+  .bsodgraysection {
+    border-left: 5px solid #474949;
+    background-color: rgba(71, 73, 73, 0.5);
+    padding: 2em 1em 2em 1em;
+    margin: 2em 0em;
+    width: 90%;
+  }
+  .bsodlightgraysection {
+    border-left: 5px solid #757575;
+    background-color: rgba(117, 117, 117, 0.5);
+    padding: 2em 1em 2em 1em;
+    margin: 2em 0em;
+    width: 90%;
+  }
+
+  /* Dividers */
+  .thingrayline {
+    border-bottom: 1px solid #757575;
+    width: 95%;
+  }
 
 /* Add animation to "page content" */
 .animate-bottom {
@@ -294,7 +329,10 @@ ul li a:hover::after {
 
 /* About Page Items */
   /* Members */
-  .members {
-    padding-top: 6em;
+  .leadership {
+    margin-top: 6em;
+    text-align: left;
+  }
+  .about_leadership {
     text-align: left;
   }
