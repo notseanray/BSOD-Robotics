@@ -76,10 +76,13 @@ div {
   font-size: 72px;
 }
 .textmedium {
-  font-size: 36px;
+  font-size: 40px;
 }
 .textsmall {
   font-size: 18px;
+}
+.sponsor-text {
+  font-size: 25px;
 }
 
 /* Formatting */
@@ -222,6 +225,9 @@ width: 5px;
   background-color: #474949;
   border-bottom: 1px solid #757575;
   display: inline-block;
+}
+a {
+  color: rgb(125, 186, 255);
 }
 ul {
   display: flex;
