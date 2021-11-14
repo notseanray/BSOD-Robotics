@@ -8,7 +8,7 @@ body {
     background-repeat: no-repeat;
 		background-attachment: fixed;
     background-size: cover;*/
-  background-color: #363939;
+  background-color: #0320db;
   margin: 0;
 
 }
@@ -21,13 +21,13 @@ div {
 
 /* Text Colors and Formatting */
 .bsodcyan {
-  color: #364eeb;
+  color: rgb(247, 247, 247);
 }
 .bsodblue {
-  color: #051DB5;
+  color: rgb(219, 218, 218);
 }
 .bsoddarkgray {
-  color: #363939;
+  color: #e0e0e0;
 }
 .bsodgray {
   color: #474949;
@@ -52,7 +52,7 @@ div {
   color: green;
 }
 .colorblue {
-  color: blue;
+  color: #051db5;
 }
 .colorindigo {
   color: indigo;
