@@ -3,54 +3,37 @@
 	<head>
 		<link rel="stylesheet" type="text/css" href="pages/style.css">
 		<link rel="icon" type="image/png" href="images/favicon.png"/>
-		<link rel="preconnect" href="https://fonts.gstatic.com">
-		<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
-		<title>BSOD Robotics</title>
+		<title>BSOD Robotics 1.0</title>
 	</head>
 	
 	<div class="navbar">
 		<ul>
-				<a href="index.html" target="_self"><img src="./images/BSOD Logo 4.png" alt="logo" width="64px" height="64px" style="position: absolute; top: 7px; left: 1.4em;"></a>
-				<div style="position: relative; width: 4em"></div>
-				<li style="left: 4em;"><a href="index.html" target="_self"><div>Home</div></a></li>
-				<li><a href="pages/about.html" target="_self"><div>About Us</div></a></li>
-				<li><a href="pages/first.html" target="_self"><div>FIRST</div></a></li>
-				<li><a href="pages/sponsors.html" target="_self"><div>Sponsors</div></a></li>
-				<li><a href="pages/support.html" target="_self"><div>Support Us!</div></a></li>
-				<div class="menu">
-					<span class="menu-global menu-top"></span>
-					<span class="menu-global menu-middle"></span>
-					<span class="menu-global menu-bottom"></span>
-				</div>
-				
+			<a href="index.html" target="_self"><img src="./images/BSOD Logo 4.png" alt="logo" width="64px" height="64px" style="position: absolute; top: 7px; left: 1.4em;"></a>
+			<div style="position: relative; width: 4em"></div>
+			<li style="left: 4em;"><a href="index.html" target="_self"><div>Home</div></a></li>
+			<li><a href="pages/about.html" target="_self"><div>About Us</div></a></li>
+			<li><a href="pages/first.html" target="_self"><div>FIRST</div></a></li>
+			<li><a href="pages/sponsors.html" target="_self"><div>Sponsors</div></a></li>
+			<li><a href="pages/support.html" target="_self"><div>Support Us!</div></a></li>
+			<div style="right: 18px; position: absolute;">
+				<a href="https://github.com/NotCreative21/BSOD-Robotics" target="_blank"><img src="./images/github-logo.png" width="48px" height="48px"/></a>
+			</div>
 		</ul>	
 	</div>
 	<center>
-	<div style="display:none;" id="myDiv" class="animate-bottom pagewrap">
-		<body onload="myFunction()">
-					<div class="section welcome">
-						<div class="section welcome-columns">
+		<div style="display:none;" id="preload" class="animate-bottom pagewrap">
+			<body onload="preload()">
+				<div class="section welcome">
+					<div class="section welcome-columns">
 						<div class="column">
-							<div class="bsodcyan textmedium bold underline">Blue Screen Of Death</div>
+							<div class="bsodcyan textmedium bold underline">Blue Screen Of Death 1.0</div> <br>
 							<div class="bsodblue">We’re the Blue Screen of Death, a robotics club originating from North Cobb High School in Kennesaw, GA. Our club is currently made up of one FIRST Tech Challenge (FTC) team. Through hands-on experience, our members learn and develop skills in programming, engineering, leadership, and more.</div>
 						</div>
 						<div class="column">
-							<!--<iframe title="A 3D model" width="320em" height="320em" src="https://sketchfab.com/models/982e6ceaf4b8401bbfb0473e18b47ac1/embed?autostart=0&amp;ui_controls=1&amp;ui_infos=1&amp;ui_inspector=1&amp;ui_stop=1&amp;ui_watermark=1&amp;ui_watermark_link=1" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-							<p style="font-size: 0.8rem; font-weight: normal; margin: 5px; color: #b4b4b4;">BSOD Robot Model, viewable on <a href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a>.</p>-->
-						</div>
+							<img src="./images/comp1.jpg" height="384px" width="512px" style="border-radius: 20px;"/>
 						</div>
 					</div>
-					<!--<div class="thingrayline"></div>
-				<div class="section fivepillars">
-					<div class="bsodcyan textmedium bold underline">The Five Pillars of BSOD</div>
-					<div class="values">
-						<div class="icons bsodblue"><img src="./images/collaboration.jfif" alt="logo" width="150em" height="150em" style="border-radius: 60em;"><div class="bsodcyan bold textsmall">COLLABORATION</div>Collaboration is a huge part of what we do. Your co-workers are your are greatest tool, and if you use that tool in the right way, there's nowhere you can't go. Work clearly, concisely, precisely, and a well-oiled machine doesn't stand a chance.</div>
-						<div class="icons bsodblue"><img src="./images/leadership.jfif" alt="logo" width="150em" height="150em" style="border-radius: 60em;"><div class="bsodcyan bold textsmall">LEADERSHIP</div>Leadership is vital to BSOD. Without a captain to lead, there is no sailing -- and you are the author to your life's story. If leadership is needed, step up and be the leader that those around you may need.</div>
-						<div class="icons bsodblue"><img src="./images/efficiency.jfif" alt="logo" width="150em" height="150em" style="border-radius: 60em;"><div class="bsodcyan bold textsmall">EFFICIENCY</div>Efficiency is very important to how we function. Speed -- cautious and careful speed -- keeps us moving forward. To begin a journey, don't look backwards, look forwards and take one step after another.</div>
-						<div class="icons bsodblue"><img src="./images/reliability.jfif" alt="logo" width="150em" height="150em" style="border-radius: 60em;"><div class="bsodcyan bold textsmall">RELIABILITY</div>Reliability is one of the most important, if not the most important pillar. Simple failures during a competition could be catastrophic, and mistakes happen, but double check, triple check if that's what it takes.</div>
-						<div class="icons bsodblue"><img src="./images/compassion.jfif" alt="logo" width="150em" height="150em" style="border-radius: 60em;"><div class="bsodcyan bold textsmall">COMPASSION</div>We are all human. Your fellow co-workers, your judges, your audience, your competition. Treat them as such, and with respect, for one human has the ability to change the entire world.</div>
-					</div>
-				</div>-->
+				</div>
 				<div style="display:block; margin-top: 12em;"></div>
 				<div class="section graysection">
 					<div class="section-grid1x3">
@@ -70,59 +53,15 @@
 					<div class="grayline-top"></div>
 					<div class="grayline-bottom"></div>
 				</div>
-
+				<img src="./images/robot.jpg" width="1024px" height="768px" style="border-radius: 20px;"/>
 				<div class="footer">
-				<div style="display:block; margin-top: 3em;"></div>
-				<div class="sponsors"><!--<img src="./images/sponser1.png" alt="logo" width="100" height="100"></div>
-				<div class="sponsors"><img src="./images/sponser2.png" alt="logo" width="120" height="80"></div>
-				<div class="sponsors"><img src="./images/sponser3.png" alt="logo" width="100" height="100"></div>-->
-				<p style="font-size: 10px; opacity: .6;">©COPYRIGHT BSOD 2021</p>
+					<div style="display:block; margin-top: 3em;"></div>
+					<div class ="bsodcyan"> 
+						<p style="font-size: 8px; opacity: .6;">copyright BSOD 2021</p>
+					</div>
 				</div>
-			<script>
-				var myVar;
-				function myFunction() {
-					myVar = setTimeout(showPage, 350);
-				}
-				function showPage() {
-					document.getElementById("myDiv").style.display = "block";
-				}
-			</script>
-			<script>
-					var Menu = {
-					
-					el: {
-						ham: $('.menu'),
-						menuTop: $('.menu-top'),
-						menuMiddle: $('.menu-middle'),
-						menuBottom: $('.menu-bottom')
-					},
-					
-					init: function() {
-						Menu.bindUIactions();
-					},
-					
-					bindUIactions: function() {
-						Menu.el.ham
-							.on(
-							'click',
-							function(event) {
-							Menu.activateMenu(event);
-							event.preventDefault();
-						}
-						);
-					},
-					
-					activateMenu: function() {
-						Menu.el.menuTop.toggleClass('menu-top-click');
-						Menu.el.menuMiddle.toggleClass('menu-middle-click');
-						Menu.el.menuBottom.toggleClass('menu-bottom-click'); 
-					}
-					};
-
-					Menu.init();
-			</script>
-			<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script><script  src="./script.js"></script>
-		</body>
-	</center>
+			</body>
+		</center>
 	</div>
+	<script src="./preload.js"></script>
 </html>
