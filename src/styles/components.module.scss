@@ -1,3 +1,17 @@
+@import "./footer.scss";
+@import "./about.scss";
+@import "./first.scss";
+@import "./sponsors.scss";
+
+@keyframes slideIn {
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(0%);
+     }
+}
+
 @mixin font($font-family, $font-file) {
     @font-face {
         font-family: $font-family;
@@ -24,7 +38,7 @@
     border-radius: 4px;
 }
 ::-webkit-scrollbar-thumb:hover {
-    background: #031799;
+    background: #1B1D2A;
 }
 ::selection {
     background: black;
@@ -42,18 +56,11 @@
 	background-color: #1B1D2A;
     border-bottom: 2px solid #757575;
 	a {
-		/*margin: 15px;
-		color: white;
-		text-decoration: none;
-		text-shadow: 0 0 3px #fff;
-		&:hover {
-			text-shadow: 0 0 4px rgba(255, 255, 255, 0.905);
-		}*/ 
         position: relative;
         display: block;
         margin: 12px;
         text-decoration: none;
-        font-size: 28px;
+        font-size: 24px;
         font-weight: lighter;
         color: #B8C5CF;
         text-transform: uppercase;
@@ -83,13 +90,39 @@
         transform-origin: left;
     }  
 }
-.body {
+
+a {
+    color: rgb(125, 186, 255);
+}
+
+.divider {
+    border-bottom: 1px solid #757575;
+    display: flex;
+    width: 91.6%;
+    justify-content: center;
+}
+
+.root {
+    padding-top: 6em;
+    background-color: #031799;
+    height: 100vh;
+    width: 100%;
+    z-index: -50;
     position: absolute;
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 60px;
+}
+.body {
+    animation: slideIn ease 400ms;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
     height: 100%;
     background-color: #031799;
-    margin: 0;
     z-index: -10;
     color: white;
+    overflow: hidden;
 }
 .welcome {
     z-index: 1;
@@ -97,8 +130,9 @@
     margin: auto;
 }
 .column {
+    padding: 10px;
     margin-top: 5em;
-    width: 50%;
+    width: 45%;
     display: inline-block;
     vertical-align: middle;
     img {
@@ -107,7 +141,27 @@
     }
 }
 
+.stats {
+    color: rgb(189, 189, 189);
+    font-size: 40px;
+}
+
+.info {
+    color: rgb(189, 189, 189);
+    font-size: 20px;
+}
+
+.column_media {
+    margin: auto;
+}
+
+.spacer {
+    margin-top: 3em;
+}
+
 .slogan {
+    color: rgb(235, 235, 235);
+    text-decoration: underline;
     font-size: 40px;
     display: flex;
     align-items: center;
@@ -140,9 +194,11 @@
 }
 
 .sectionGray {
+    width: 102%;
+    border-top: 2px solid #757575;
+    transform: rotate(1deg) translateX(-1%);
     background-color: #1B1D2A;
-    margin: 4em 0em 6em 0em;
-    overflow-x: hidden;
+    border-bottom: 2px solid #757575;
 }
 
 .sectionGrid {
@@ -150,27 +206,26 @@
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
     max-width: 100%;
-    padding-top: 1em;
-    padding-bottom: 1em;
+    padding-top: 5em;
+    padding-bottom: 5em;
     width: 150%;
     z-index: 5;
-  }
-
-.graylineTop {
-    left: -10px;
-    top: -35px;
-    width: 150%;
-    height: 5em;
-    background-color: #1B1D2A;
-    transform: rotate(-2deg);
-    border-top: 2px solid #757575;
 }
-.graylineBottom {
-    left: -10px;
-    bottom: -35px;
-    width: 150%;
-    height: 5em;
-    background-color: #1B1D2A;
-    transform: rotate(-2deg);
-    border-bottom: 2px solid #757575;
+
+.slideshow {
+    width: 60vw;
+    margin: auto;
+}
+
+.noOverFlow {
+    padding-top: 2em;
+    padding-bottom: 2em;
+    overflow-x: hidden;
+}
+
+table {
+	padding: 15px;
+	font-size: 26px;
+	margin: auto;
+	color: rgb(189, 189, 189);
 }

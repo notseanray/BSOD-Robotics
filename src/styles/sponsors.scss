@@ -1,0 +1,16 @@
+.supportLink {
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+}
+
+.sponsorList {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	img {
+		display: inline;
+		max-height: 220px;
+		padding: 30px;
+	}
+}
