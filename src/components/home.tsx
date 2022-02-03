@@ -32,7 +32,7 @@ export function Home() {
                                 <div className={styles.info}>Nov. 2020</div>
                             </div>
                             <div className={styles.column_media}>
-                                <div className={styles.stats}>20+</div>
+                                <div className={styles.stats}>7+</div>
                                 <div className={styles.info}>Active Members</div>
                             </div>
                             <div className={styles.column_media}>
